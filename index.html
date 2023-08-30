@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Current Time is:
+        <p id="time"></p>
+      </h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="outer">
+      <div class="lists">
+        <div class="inputs">
+          <br />
+          <br />
+          <h1 id="hed1">TODOs List</h1>
+          <form>
+            <p>Enter Persons Name:-</p>
+            <input type="text" id="input2" />
+            <br />
+            <p>Enter Your age:-</p>
+            <input type="Number" id="input3" />
+            <br />
+            <br />
+            <button
+              id="btn1"
+              onclick="clicked()"
+              onmouseup="mouseup()"
+              onmousedown="mousedown()"
+              type="submit"
+            >
+              Add to list
+            </button>
+            <button
+              id="btn2"
+              onclick="clearStorage()"
+              onmouseup="mouseup1()"
+              onmousedown="mousedown1()"
+            >
+              Clear Items
+            </button>
+          </form>
+        </div>
+      </div>
+      <br />
+      <h1 id="l1">List of Names</h1>
+      <div class="list1">
+        <table>
+          <thead>
+            <tr class="tb">
+              <th>S.no.</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td scope="row">1</td>
+              <td>Salman</td>
+              <td>19</td>
+              <td>
+                <button
+                  class="btn2"
+                  onmouseup="mouseup2()"
+                  onmousedown="mousedown2()"
+                  onclick="deleted()"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
